@@ -1,0 +1,5 @@
+1) New-AzResourceGroup -Name "<AnyName>" -Location EastUS///Any available location.
+
+2) New-AzVm -ResourceGroupName powershellrsrcgrp -Name aznewvm -Location EastUS -VirtualNetworkName "MyVNet" -SubnetName "default" -SecurityGroupName "myNSG" -PublicIpAddressName "myPublicIP" -OpenPorts 80,3389
+
+3) Stop-AzVm -Name "aznewvm" -ResourceGroupName powershellrsrcgrp
